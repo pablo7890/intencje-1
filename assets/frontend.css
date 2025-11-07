@@ -1,0 +1,412 @@
+/*! Intencje Mszalne - Frontend Styles */
+.ki-frontend {
+    max-width: 1000px;
+    margin: 0 auto 30px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Nagłówek - SZARY */
+.ki-naglowek {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    border-left: 4px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.ki-naglowek h2 {
+    margin: 0 0 20px 0;
+    color: #333;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* Nawigacja */
+.ki-nawigacja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.ki-przycisk {
+    display: inline-block;
+    padding: 10px 16px;
+    background: #f0f0f0;
+    color: #333 !important;
+    text-decoration: none;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.ki-przycisk:hover {
+    background: #e0e0e0;
+    border-color: #999;
+}
+
+.ki-drukuj {
+    background: #e9ecef;
+}
+
+.ki-drukuj:hover {
+    background: #dee2e6;
+}
+
+.ki-tydzien-info {
+    font-weight: 600;
+    margin: 0 20px;
+    font-size: 16px;
+    color: #333;
+    background: #f8f9fa;
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+/* Lista intencji - układ 2 kolumny */
+.ki-lista-intencji {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.ki-dzien-item {
+    background: white;
+    border: 1px solid #e3e8f0;
+    border-radius: 12px;
+    padding: 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.ki-dzien-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* NAGŁÓWKI DNI - SZARE */
+.ki-dzien-header {
+    background: #f8f9fa;
+    color: #333;
+    padding: 20px;
+    border-radius: 12px 12px 0 0;
+    border-bottom: 1px solid #e3e8f0;
+}
+
+.ki-dzien-header h3 {
+    margin: 0 0 8px 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.ki-data {
+    font-size: 14px;
+    color: #666;
+    font-weight: 400;
+}
+
+.ki-intencje-dnia {
+    padding: 20px;
+}
+
+.ki-msza-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f0f4f8;
+}
+
+.ki-msza-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.ki-godzina {
+    font-weight: 700;
+    color: #333;
+    min-width: 70px;
+    padding-right: 20px;
+    font-size: 18px;
+    background: #f8fafc;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-align: center;
+    border: 1px solid #e3e8f0;
+}
+
+.ki-intencja {
+    flex: 1;
+    background: #f8fafc;
+    padding: 16px;
+    border-radius: 8px;
+    border-left: 4px solid #ddd;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #4a5568;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.ki-intencja:hover {
+    background: #f0f0f0;
+    border-left-color: #999;
+}
+
+.ki-info {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    color: #856404;
+    font-weight: 500;
+    grid-column: 1 / -1;
+    box-shadow: 0 2px 10px rgba(255, 212, 59, 0.2);
+}
+
+/* Selektor daty - SZARY */
+.ki-selektor-daty {
+    margin-top: 25px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.ki-selektor-daty h3 {
+    margin: 0 0 15px 0;
+    color: #333;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.ki-form-data {
+    display: flex;
+    justify-content: center;
+}
+
+.ki-data-inputs {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ki-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+}
+
+.ki-input-group label {
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+}
+
+.ki-select {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: white;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    min-width: 120px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.ki-select:hover {
+    border-color: #999;
+}
+
+.ki-duzy-przycisk {
+    padding: 10px 20px;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.ki-duzy-przycisk:hover {
+    background: #e0e0e0;
+}
+
+.ki-szybkie-daty {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    color: #333;
+}
+
+.ki-szybkie-daty strong {
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.ki-szybki-link {
+    color: #333;
+    text-decoration: underline;
+    font-weight: 500;
+    margin: 0 5px;
+    padding: 2px 4px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.ki-szybki-link:hover {
+    color: #000;
+    background: rgba(0,0,0,0.05);
+}
+
+/* Responsywność */
+@media (max-width: 900px) {
+    .ki-lista-intencji {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .ki-naglowek {
+        padding: 20px;
+    }
+    
+    .ki-naglowek h2 {
+        font-size: 24px;
+    }
+    
+    .ki-nawigacja {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .ki-tydzien-info {
+        margin: 10px 0;
+        order: -1;
+    }
+    
+    .ki-data-inputs {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    .ki-input-group {
+        width: 100%;
+    }
+    
+    .ki-select {
+        min-width: 100%;
+        text-align: center;
+    }
+    
+    .ki-duzy-przycisk {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .ki-msza-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .ki-godzina {
+        margin-bottom: 12px;
+        padding-right: 0;
+        min-width: auto;
+    }
+    
+    .ki-frontend {
+        margin: 0 15px 30px 15px;
+    }
+}
+
+/* Style drukowania */
+@media print {
+    .ki-nawigacja,
+    .ki-info,
+    .ki-drukuj,
+    .ki-selektor-daty {
+        display: none !important;
+    }
+    
+    .ki-naglowek {
+        background: white !important;
+        border-left: 4px solid #000 !important;
+        padding: 15px !important;
+        margin-bottom: 20px !important;
+        box-shadow: none !important;
+    }
+    
+    .ki-naglowek h2 {
+        color: #000 !important;
+        margin-bottom: 10px !important;
+    }
+    
+    .ki-lista-intencji {
+        display: block !important;
+    }
+    
+    .ki-dzien-item {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        border: 2px solid #000 !important;
+        margin-bottom: 20px !important;
+        box-shadow: none !important;
+    }
+    
+    .ki-dzien-header {
+        background: #f0f0f0 !important;
+        color: #000 !important;
+        border-bottom: 2px solid #000 !important;
+    }
+    
+    .ki-intencja {
+        background: white !important;
+        border: 1px solid #ddd !important;
+    }
+    
+    .ki-godzina {
+        background: #f8f8f8 !important;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+        color: #000;
+        background: white;
+        padding: 10px;
+    }
+}
+
+/* Reset dla kontenera */
+.ki-frontend * {
+    box-sizing: border-box;
+}
+
